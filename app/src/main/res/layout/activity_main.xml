@@ -10,16 +10,27 @@
     tools:context="org.dync.swipebacklayout.MainActivity">
 
     <TextView
+        android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!" />
 
     <Button
         android:id="@+id/button"
-        android:onClick="click"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="第一个Activity，用于跳转" />
+        android:onClick="click"
+        android:text="用于startActivity" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="click"
+        android:text="用于startActivityForResult" />
 </RelativeLayout>
